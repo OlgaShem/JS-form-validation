@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form-block">
+        <form class="registration" method="post" id="reg">
+            <div class="registration__content">
+                <h2 class="registration__title"> 
+                    Sign up for webinar and get our 
+                    <span class="registration__title_blue">complimentary checklist</span> 
+                    for creating a perfect profile on LinkedIn!
+                </h2>
+                
+                <div class="form-field">
+                    <input type="text" name="name" id="name" class="form-field__input" onchange="checkName();" required>
+                    <label for="name">First Name</label>
+                    <div class="error" id="error-name"></div>
+                </div>
+                <div class="form-field">
+                    <input type="text" name="surname" id="surname" class="form-field__input" onchange="checkSurname();" required>
+                    <label for="surname">Last Name</label>
+                    <div class="error" id="error-surname"></div>
+                </div>
+                <div class="form-field">
+                    <input type="text" name="email" id="email" class="form-field__input" onchange="checkEmail();" required>
+                    <label for="email" class="form-label">Email </label>
+                    <div class="error" id="error-email"></div>
+                </div>
+                <div class="form-field">
+                    <input type="text" name="company" id="company" class="form-field__input" onchange="checkCompany();" required>
+                    <label for="login">Company</label>
+                    <div class="error" id="error-company"></div>
+                </div>
+                <div class="checkbox-block">
+                    <input type="checkbox"  class="registration__checkbox">
+                    <p class="registration__check-text">
+                        I want to receive more sales and lead generation insights and tips
+                    </p>
+                </div> 
+                <button type="submit" class="registration__button">Register now</button>
+                <p class="registration__text">We use this information to provide you with new content and updates. You may unsubscribe at any time. Check our <a href="" class="registration__link">Privacy Policy.</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
